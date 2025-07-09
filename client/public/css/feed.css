@@ -46,11 +46,12 @@ a {
 	float: left;
 	height: 50px;
 	bottom: 5px;
+	right: 120px;
 }
 
-#newsfeed {
+#newsfeed{
 	max-width: 600px;
-	min-width: 600px;
+	min-width: 1300px;
 }
 
 .feedImage {

@@ -1,11 +1,20 @@
+function goToLocation(path) {
+  window.location.href = path;
+}
 
-
-
-/*
- * Check ascii code for spacebar and call goToLocation in global to change URL
- */
 function checkKeyPress(e) {
-  if (e.keyCode == 32) {
+  // Handle spacebar press (key code 32)
+  if (e.keyCode === 32) {
+    e.preventDefault(); // Prevent scroll
     goToLocation('/feed');
   }
 }
+
+window.onload = function () {
+  // Make body focusable and focused to receive key input
+  document.body.setAttribute("tabindex", "0");
+  document.body.focus();
+
+  // Attach the key press event
+  document.body.addEventListener("keydown", checkKeyPress);
+};
