@@ -15,11 +15,11 @@ app.get('/1', function(req, res) {
 })
 
 app.get('/2', function(req, res) {
-    res.sendFile('3.html', {root: './client/views'})
+    res.sendFile('2.html', {root: './client/views'})
 })
 
 app.get('/3', function(req, res) {
-    res.sendFile('2.html', {root: './client/views'})
+    res.sendFile('3.html', {root: './client/views'})
 })
 
 
