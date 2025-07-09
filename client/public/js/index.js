@@ -3,8 +3,7 @@ function goToLocation(path) {
 }
 
 function checkKeyPress(e) {
-  // Handle spacebar press (key code 32)
-  if (e.keyCode === 32) {
+  if (e.keyCode === 32) { // Spacebar
     e.preventDefault(); // Prevent scroll
     goToLocation('/feed');
   }
@@ -17,4 +16,13 @@ window.onload = function () {
 
   // Attach the key press event
   document.body.addEventListener("keydown", checkKeyPress);
+
+  // Also attach click event to the text element
+  const clickTarget = document.getElementById('fade_text');
+  if (clickTarget) {
+    clickTarget.style.cursor = 'pointer'; // show pointer cursor on hover
+    clickTarget.addEventListener('click', () => {
+      goToLocation('/feed');
+    });
+  }
 };
