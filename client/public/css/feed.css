@@ -70,6 +70,18 @@ a {
 position: relative;
 	float: center;
 	margin-top:0px;
+	margin-right: 30.9px;
+}
+#lnk2{
+position: relative;
+	float: center;
+	margin-top:0px;
+	margin-right: 21.7px;
+}
+#lnk3{
+position: relative;
+	float: center;
+	margin-top:0px;
 	margin-left: 0px;
 }
 /*images/links*/
@@ -81,6 +93,16 @@ position: relative;
   box-shadow: 0 0 75px 15px rgba(139, 0, 0, 0.8); /* Red fade */
 }
 #lnk1 {
+  display: block;
+  border: none; /* Remove all borders */
+  border-bottom: 4px solid rgb(139, 0, 0); /* Add only bottom border */
+}
+#lnk2 {
+  display: block;
+  border: none; /* Remove all borders */
+  border-bottom: 4px solid rgb(139, 0, 0); /* Add only bottom border */
+}
+#lnk3 {
   display: block;
   border: none; /* Remove all borders */
   border-bottom: 4px solid rgb(139, 0, 0); /* Add only bottom border */

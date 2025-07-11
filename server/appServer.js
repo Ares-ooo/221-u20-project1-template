@@ -22,5 +22,12 @@ app.get('/3', function(req, res) {
     res.sendFile('3.html', {root: './client/views'})
 })
 
+app.get('/4', function(req, res) {
+    res.sendFile('4.html', {root: './client/views'})
+})
+
+app.get('/5', function(req, res) {
+    res.sendFile('5.html', {root: './client/views'})
+})
 
 app.listen(1337, () => console.log('Listening on port 1337.'))
