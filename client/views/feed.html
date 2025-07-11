@@ -1,51 +1,51 @@
 <!doctype html>
-<html>
-  <head>
-    <title>GarbageChatter Newsfeed</title>
-    <meta charset="utf-8"/>
-      <link rel="stylesheet" type="text/css" href="/css/global.css">
-      <link rel="stylesheet" type="text/css" href="/css/feed.css">
-  </head>
-  <body>
-    <header>
-      GarbageChatter
-      <div id="portal_button">
-        <img id="redphenox" src="images/phenox.png"></img> <div id="portal_button">Gachiakuta</div>
-      </div>
-    </header>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>GarbageChatter Newsfeed</title>
+  <link rel="stylesheet" href="/css/global.css" />
+  <link rel="stylesheet" href="/css/feed.css" />
+  <link rel="stylesheet" href="/css/links.css" />
+</head>
+<body>
+  <header>
+    <div class="left-group" role="banner">
+      <div id="back" tabindex="0" role="button" aria-label="Go back">click here to go back</div>
+      <div id="site_title">GarbageChatter</div>
+    </div>
+    <div id="portal_button" role="link" tabindex="0" aria-label="Go to Gachiakuta Wiki">
+      <img id="redphenox" src="images/phenox.png" alt="Phenox Logo" />
+      <div id="portal_button_text">Gachiakuta</div>
+    </div>
+  </header>
 
+  <main>
+    <div class="row">
+      <img class="feedImage" src="images/purple.png" alt="purple" />
+      <img class="feedImage" src="images/yellow.png" alt="yellow" />
+    </div>
+    <div class="row links-row">
+      <a class="feedLink" href="/1">setting</a>
+      <a class="feedLink" href="/2">style</a>
+    </div>
 
-    <main>
-      <div class="row">
-        <img id ="img1" src="images/purple.png" alt="purple">
-        <img id ="img1" src="images/yellow.png" alt="yellow">
-      </div>
-      <div class="row">
-        <a id ="lnk1" href="/1">setting</a>
-        <a id ="lnk1" href="/2">style</a>
-      </div>
+    <div class="row">
+      <img class="feedImage" src="images/red.png" alt="red" />
+      <img class="feedImage" src="images/black.png" alt="black" />
+    </div>
+    <div class="row links-row">
+      <a class="feedLink" href="/3">abilities</a>
+      <a class="feedLink" href="/4">theme</a>
+    </div>
 
-      <div class="row">
-        <img id ="img1" src="images/red.png" alt="red">
-        <img id ="img1" src="images/black.png" alt="black">
-      </div>
-      <div class="row">
-        <a id ="lnk2" href="/3">abilities</a>
-        <a id ="lnk2" href="/4">theme</a>
-      </div>
+    <div class="row">
+      <img class="feedImage" src="images/blue.png" alt="blue" />
+    </div>
+    <div class="row links-row">
+      <a class="feedLink" href="/5">MC Rud0</a>
+    </div>
+  </main>
 
-      <div class="row">
-        <img id ="img1" src="images/blue.png" alt="blue">
-      </div>
-      <div class="row">
-        <a id ="lnk3" href="/5">MC Rud0</a>
-      </div>
-    </main>
-
-
-    <footer>
-      <p id="site_info">Copyright &copy; 2020: Marist College est. 1929</p>
-    </footer>
-      <script src="/js/feed.js"></script>
-  </body>
+  <script src="/js/feed.js"></script>
+</body>
 </html>

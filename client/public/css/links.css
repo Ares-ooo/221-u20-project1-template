@@ -1,0 +1,101 @@
+/* Body and general */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fafafa;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #b91c1c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 3px 8px rgba(185, 28, 28, 0.7);
+  z-index: 1000;
+  user-select: none;
+  font-weight: 600;
+}
+
+.left-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  font-size: 22px;
+}
+
+#back {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+#back:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#site_title {
+  font-size: 24px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+#portal_button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  user-select: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+#portal_button:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+#redphenox {
+  height: 50px;
+  border-radius: 6px;
+  filter: drop-shadow(0 0 6px #f87171);
+}
+
+#portal_button_text {
+  white-space: nowrap;
+}
+
+/* Paragraph styling to look centered & bold */
+main p {
+  max-width: 800px;
+  margin: 100px auto 40px;
+  font-size: 22px;
+  line-height: 1.6;
+  font-weight: 600;
+  color: #333;
+  padding: 0 30px;
+  text-align: center;
+  background: linear-gradient(145deg, #fff, #f3f3f3);
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(185, 28, 28, 0.3);
+  transition: transform 0.3s ease;
+}
+
+main p:hover {
+  transform: scale(1.02);
+}
+
+/* Hide footer if you still have it */
+footer {
+  display: none;
+}
