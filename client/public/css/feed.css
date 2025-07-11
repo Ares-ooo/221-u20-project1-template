@@ -1,8 +1,6 @@
-/* feed.css */
-
 main {
   display: grid;
-  padding-top: 70px; /* space for fixed header */
+  padding-top: 70px;
   justify-content: center;
   padding-left: 10px;
   padding-right: 10px;
@@ -10,13 +8,9 @@ main {
   background-color: #fff;
   min-height: 100vh;
 }
-
-/* Hide footer if present */
 footer {
   display: none;
 }
-
-/* Back button styling to keep consistent with header */
 #back {
   cursor: pointer;
   color: #fff;
@@ -28,8 +22,6 @@ footer {
 #back:hover {
   color: #fee2e2;
 }
-
-/* Phenox image adjustments */
 #redphenox {
   position: relative;
   height: 50px;
@@ -37,8 +29,6 @@ footer {
   filter: drop-shadow(0 0 6px #f87171);
   border-radius: 4px;
 }
-
-/* Flex rows for images and links */
 .row {
   display: flex;
   justify-content: center;
@@ -46,36 +36,29 @@ footer {
   margin-bottom: 15px;
   flex-wrap: wrap;
 }
-
 .row img {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(185, 28, 28, 0.7);
   cursor: pointer;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-
 .row img:hover {
   transform: scale(1.07);
   box-shadow: 0 0 16px rgba(185, 28, 28, 0.9);
 }
-
-/* Feed images styling */
 .feedImage {
-  max-width: 90px;          /* smaller, neater thumbnails */
+  max-width: 90px;
   max-height: 90px;
-  margin: 6px 12px;         /* less margin to look tighter */
+  margin: 6px 12px;
   border: 3px solid #b91c1c;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(185, 28, 28, 0.7);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-
 .feedImage:hover {
   transform: scale(1.07);
   box-shadow: 0 0 16px rgba(185, 28, 28, 0.9);
 }
-
-/* Links under the images */
 .row a {
   font-size: 16px;
   font-weight: 600;
@@ -85,7 +68,6 @@ footer {
   border-radius: 6px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 .row a:hover {
   background-color: #b91c1c;
   color: white;

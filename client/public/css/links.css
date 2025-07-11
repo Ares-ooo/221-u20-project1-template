@@ -1,4 +1,3 @@
-/* Body and general */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #fafafa;
@@ -6,8 +5,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/* Header */
 header {
   position: fixed;
   top: 0;
@@ -24,7 +21,6 @@ header {
   user-select: none;
   font-weight: 600;
 }
-
 .left-group {
   display: flex;
   align-items: center;
@@ -32,7 +28,6 @@ header {
   color: white;
   font-size: 22px;
 }
-
 #back {
   cursor: pointer;
   padding: 5px 10px;
@@ -42,13 +37,11 @@ header {
 #back:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
-
 #site_title {
   font-size: 24px;
   font-weight: 700;
   white-space: nowrap;
 }
-
 #portal_button {
   display: flex;
   align-items: center;
@@ -64,18 +57,14 @@ header {
   opacity: 0.85;
   transform: scale(1.05);
 }
-
 #redphenox {
   height: 50px;
   border-radius: 6px;
   filter: drop-shadow(0 0 6px #f87171);
 }
-
 #portal_button_text {
   white-space: nowrap;
 }
-
-/* Paragraph styling to look centered & bold */
 main p {
   max-width: 800px;
   margin: 100px auto 40px;
@@ -90,12 +79,9 @@ main p {
   box-shadow: 0 0 30px rgba(185, 28, 28, 0.3);
   transition: transform 0.3s ease;
 }
-
 main p:hover {
   transform: scale(1.02);
 }
-
-/* Hide footer if you still have it */
 footer {
   display: none;
 }
