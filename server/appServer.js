@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 // ✅ Require the feedController
-const feedController = require('./server/controller/feedController');
+const feedController = require('./controller/feedController');
 
 // ✅ Middleware to serve static files & parse JSON bodies
 app.use(express.static('client/public'));
