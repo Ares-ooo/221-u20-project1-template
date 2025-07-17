@@ -41,9 +41,22 @@
     <div class="row links-row">
       <a class="feedLink" href="/5">MC Rud0</a>
     </div>
-
     <div id="newsfeed"></div>
   </main>
+  <button id="addFeedBtn">+</button>
+  <div id="feedModal" class="modal">
+    <div class="modal-content">
+      <h3>Add New Feed Item</h3>
+      <input type="text" id="newTitle" placeholder="Title" />
+      <textarea id="newBody" placeholder="Body"></textarea>
+      <input type="text" id="newImageUrl" placeholder="Image URL" />
+      <input type="text" id="newLinkUrl" placeholder="Link URL" />
+      <div class="modal-buttons">
+        <button id="sendFeedBtn">Send</button>
+        <button id="cancelFeedBtn">Cancel</button>
+      </div>
+    </div>
+  </div>
   <script src="/js/feed.js"></script>
 </body>
 </html>

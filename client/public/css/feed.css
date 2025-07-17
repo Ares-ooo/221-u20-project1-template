@@ -72,3 +72,75 @@ footer {
   background-color: #b91c1c;
   color: white;
 }
+
+/* Floating + button */
+#addFeedBtn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #b91c1c;
+  color: white;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+#addFeedBtn:hover {
+  background-color: #991b1b;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 6px;
+  font-size: 14px;
+}
+.modal-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+#sendFeedBtn {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+#sendFeedBtn:hover {
+  background-color: #2563eb;
+}
+#cancelFeedBtn {
+  background-color: #d1d5db;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+#cancelFeedBtn:hover {
+  background-color: #9ca3af;
+}

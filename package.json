@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/crgmaitner/appProject#readme",
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "uuid": "^11.1.0"
   }
 }

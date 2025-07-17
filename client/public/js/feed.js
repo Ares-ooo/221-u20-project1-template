@@ -31,7 +31,7 @@ function addFeedItemToPage(item, index) {
   // Delete button
   const deleteButton = document.createElement('button');
   deleteButton.textContent = 'Delete';
-  deleteButton.onclick = () => deleteFeedItem(index);
+  deleteButton.onclick = () => deleteFeedItem(item.id); // use item.id instead of index
 
   // Append all to item div
   itemDiv.appendChild(title);
@@ -108,4 +108,32 @@ window.onload = function () {
   }
 
   getCurrentFeed(); // Load feed on page load
+
+  // ✅ Modal elements & functionality
+  const modal = document.getElementById('feedModal');
+  const addBtn = document.getElementById('addFeedBtn');
+  const sendBtn = document.getElementById('sendFeedBtn');
+  const cancelBtn = document.getElementById('cancelFeedBtn');
+
+  addBtn.onclick = () => modal.style.display = 'block';
+  cancelBtn.onclick = () => modal.style.display = 'none';
+
+  sendBtn.onclick = () => {
+    const title = document.getElementById('newTitle').value.trim();
+    const body = document.getElementById('newBody').value.trim();
+    const imageUrl = document.getElementById('newImageUrl').value.trim();
+    const linkUrl = document.getElementById('newLinkUrl').value.trim();
+
+    if (title && body && imageUrl && linkUrl) {
+      addNewFeedItem({ title, body, imageUrl, linkUrl });
+      modal.style.display = 'none';
+      // Clear fields
+      document.getElementById('newTitle').value = '';
+      document.getElementById('newBody').value = '';
+      document.getElementById('newImageUrl').value = '';
+      document.getElementById('newLinkUrl').value = '';
+    } else {
+      alert('Please fill in all fields.');
+    }
+  };
 };
